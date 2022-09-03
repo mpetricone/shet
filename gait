@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ $# -lt 1 ] || [ $# -gt 3 ] ; then
+  echo "gait -> search for pattern in path:./ limit columns:80"
+  echo "usage: gait pattern [path] [columns]"
+  echo "Matthew Petricone 2022 - Public Domain enjoy"
+  exit 0
+fi
+cl=${3:-80}
+pat=${2:-'./'}
+
+grep -rn $1 $pat | cut -c -$cl
