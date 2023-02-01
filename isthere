@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ $# -eq 0 ] || [ $# -gt 3 ] ; then
+  echo "isthere word (here)> find file with name containing 'word' in 'here'"
+  echo "usage: isthere word [path]"
+  echo "here is optional"
+  exit 0
+fi
+
+path=${2:-'./'}
+find $path | grep $1
