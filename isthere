@@ -3,6 +3,7 @@ if [ $# -eq 0 ] || [ $# -gt 3 ] ; then
   echo "isthere word (here)> find file with name containing 'word' in 'here'"
   echo "usage: isthere word [path]"
   echo "here is optional"
+  echo "Matthew Petricone 2023 - Public Domain - enjoy"
   exit 0
 fi
 
